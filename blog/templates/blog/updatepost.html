@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="col-sm-10">
+    <h3>Deshboard </h3> <h2> Add Post</h2>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ff.as_p}}
+    <input type="submit" value="add">
+    <a href="{% url 'deshboard' %}"  class="btn btn-danger">cancel</a>
+
+
+</form>
+
+</div>
+{% endblock content %}
+
